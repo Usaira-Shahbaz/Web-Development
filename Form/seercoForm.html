@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Segoe UI';
+        }
+        .head{
+            height: 60px;
+            background-color: rgb(188, 197, 179);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .web-name{
+            margin-right:150px;
+            color:white;
+            
+        }
+        .tags a{
+            font-size: 0.90rem;
+            margin-right: 60px;
+        }
+
+        .head-two{
+            height: 40px;
+            background-color: rgba(188, 197, 179, 0.484);
+            display: flex;
+            
+        }
+        .same{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        
+        }
+        .all{
+            width: 150px;
+            font-size: larger;
+        }
+        .jobs{
+            width: 1000px;
+        }
+        .jobs a{
+            margin-right: 50px;
+            font-size: 0.90rem;
+        }
+        .in{
+            width: auto;
+            
+        }
+        #unique{
+            border: none;
+            height: 30px;
+            width: 100px;
+        }
+        .main{
+            text-align: center;
+            margin-top:5px;
+        }
+        .same2{
+            margin-top: 25px;
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+        }
+        .border{
+            margin-right: 80px;
+        }
+    
+        #one{
+            width: 500px;
+        }
+        #two{
+            margin-left: 10px;
+        }
+        .mat{
+            margin-left: 80px;
+        }
+        textarea{
+            width: 250px;
+            height: 150px;
+        }
+        form{
+            display: inline;;
+        }
+        .pic{
+            position: absolute;
+            right: 300px;
+            bottom: 300px;
+            height: auto;
+            width: auto;
+            background-color:rgba(180, 186, 169, 0.984);
+        }
+       
+        .same4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(188, 197, 179);
+        }
+        .contact{
+            height: 50px;
+        }
+        .details{
+            height: 100px;
+            
+        }
+    </style>
+</head>
+<body style="background-image: url('360.jpg');background-size: cover;">
+    <header>
+        <div class="head">
+            <div class="web-name">
+                <h2>SERCO.com</h2>
+            </div>
+            <div class="tags">
+                <a>Home</a>
+                <a>About Us</a>
+                <a>Contact Us</a>
+                <a>Blogs</a>
+                <a>Help</a>
+            </div>
+            <div class="meanu" >
+                <select>
+                    <option>Menu</option>
+                    <option>All Rated Jobs</option>
+                    <option>New Jobs</option>
+                    <option>2023 New Jobs</option>
+                </select>        
+            </div>
+        </div>
+
+        <div class="head-two">
+            <div class="all same">
+                Top Jobs
+            </div>
+            <div class="jobs same">
+                <a>Police Officer</a>
+                <a>Airport Officer</a>
+                <a>SalesMan Officer</a>
+                <a>Security Officer</a>
+            </div>
+            <div class="in same">
+                <input id="unique" type="search" placeholder="Search Here" style="background-color: transparent;">
+                <P>Search</P>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+    <h2>Airport Officer Online Form</h2>
+    </div>
+
+    <form>
+        <div class="form same2">
+            <div class="border">
+            First Name
+            <input type="text" placeholder="First Name"></div>
+            <div class="border">
+            Second Name
+            <input type="text" placeholder="Second Name"></div>
+            <div class="border">
+            Third Name
+            <input type="text" placeholder="Third Name"></div>
+        </div>
+
+        <div class="add same2">
+            <a>Full Address</a>
+            <input type="text" placeholder="Permenant Address" style="margin-left:10px;" id="one">
+        </div>
+
+        <div class="cnic same2">
+            <div class="border">
+            <a>CNIC NO.</a>
+            <input type="number" placeholder="Without Dashes" id="two" ></div>
+            <div  class="border">
+            Email
+            <input type="email" placeholder="Email" id="two" ></div>
+        </div>
+
+        <div class="num same2">
+            <div class="border">
+                Telephone No.
+                <input type="number" placeholder="Tel No." id="two">
+            </div>
+            <div class="border">
+                Phone No.
+                <input type="number" placeholder="Ph No." id="two">
+            </div>
+        </div>
+
+        <div class="edu same2">
+            Education
+            <br><br>
+            <div class="mat border" >
+            <label >Matric</label>
+            <input type="radio"  , name="section"></div>
+            <div class="border">
+            <label >Intermediate</label>
+            <input type="radio" ,  name="section"></div>
+            <div class="border">
+            <label >BS</label>
+            <input type="radio" ,  name="section"></div>
+        </div>
+
+        <div class="edu same2">
+            Previous job(if applicable)
+            <br><br>
+            <div class="mat border" >
+            <label >Yes</label>
+            <input type="radio"  , name="sectiona"></div>
+            <div class="border">
+            <label >No</label>
+            <input type="radio" ,  name="sectiona"></div>
+            
+        </div>
+        <div class="same2">
+            <div >
+            <label >Details About Yourself</label><br><br>
+            <textarea placeholder="Any other about yourself"></textarea></div>
+        </div>
+    </form>
+
+    <div class="pic">
+    <h3 >Time is : <span id = "time"></span></h3>
+    </div>
+    <footer>
+        <div class="contact same4">
+            Contact Us
+        </div>
+        <div class="details same4">
+            <pre>Telephone:4848600      Website:Seerco.com
+                </pre>
+        </div>
+    </footer>
+    
+    <script>
+        let a;
+        let date;
+        let time;
+        const option = { weekday:"long",year:"numeric",month:"long",day:"numeric"}
+        setInterval(() => {
+        a = new Date();
+        date = a.toLocaleDateString(undefined , option);
+        time = a.getHours() + " : " + a.getMinutes() + " : " + a.getSeconds();
+        doc = document.getElementById("time").innerHTML = time + "<br><br>" + date ;
+        }, 1000);
+    </script>
+</body>
+</html>

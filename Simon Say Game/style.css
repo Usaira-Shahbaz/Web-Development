@@ -1,0 +1,42 @@
+body{
+   
+    overflow: hidden;
+} 
+h1{
+    text-align: center;
+}
+h2{
+    font-weight: 100;
+    text-align: center;
+}
+.buttons-div{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.btn{
+    margin: 1.5rem;
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+
+.one{
+    background-color: #4caf50;
+}
+.two{
+    background-color: #f44336;
+}
+.three{
+    background-color: #2196f3;
+}
+.four{
+    background-color: #ffeb3b;
+}
+
+.general{
+    background-color: white;
+}

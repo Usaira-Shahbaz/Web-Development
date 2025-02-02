@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your Chat id: <%=dataChat._id%></h1>
+    <br><hr>
+    <h3>From <%=dataChat.from%></h3>
+    <h3>To <%=dataChat.to%></h3>
+
+    <form method="POST" action="/edit/<%=dataChat._id%>?_method=PUT">
+        <span>Update your Message: </span> <br>
+        <textarea name="msg" ><%=dataChat.msg%></textarea><br><br>
+        <button>Update</button>
+    </form>
+</body>
+</html>

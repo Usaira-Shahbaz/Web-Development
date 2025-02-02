@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        
+      }
+      .main_box{
+        background:url("photo.jpg");
+        background-size: cover;
+        height: 100vh;
+      }
+      .btn_one i{
+        color: white;
+        font-size: 2.0rem;
+        font-weight: 700;
+        position: absolute;
+        top:5%;
+        left: 25px;
+        
+        line-height: 60px;
+
+      }
+      .sidebar_menu{
+        position: fixed;
+        left:-350px;
+        height: 100vh;
+        width: 25%;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 8px grey;
+      }
+      .sidebar_menu .logo{
+        width: 100%;
+        box-shadow: 0 0 4px grey;
+        position: absolute;
+        line-height: 60px;
+        text-align: center;
+        
+      }
+      .sidebar_menu .logo a{
+        
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+
+      .sidebar_menu .menu{
+        width: 100%;
+        color: white;
+        position: absolute;
+        top: 17%;
+      }
+
+      .sidebar_menu .btn_two{
+        color: white;
+        width: 100%;
+        font-size: 1.6rem;
+        position: absolute;
+        top: 2.0%;
+        left: 90%;
+        /* opacity: 0; */
+      }
+      .sidebar_menu .menu li{
+        margin-top: 5px;
+        padding: 10px 30px;
+      }
+      .sidebar_menu .menu li i,a{
+        color: white;
+        text-decoration: none;
+      }
+      .sidebar_menu .menu li i{
+        padding-right: 7px;
+      }
+      .sidebar_menu .social_media{
+        position: absolute;
+        left: 24%;
+        bottom:5%;
+
+      }
+      .sidebar_menu .social_media i{
+        color: white;
+        padding-left: 15px;
+        
+        opacity: 0.5;
+      }
+      #check{
+        display: none;
+      }
+
+      .sidebar_menu .menu li:hover{
+        box-shadow: 0 0 8px grey;
+        font-size: 1.1rem;
+      }
+
+      .sidebar_menu .social_media i:hover{
+        opacity: 1;
+        transform: scale(1.1);
+      }
+
+      .sidebar_menu .btn_two:hover{
+        font-size: 1.8rem;
+      }
+      .btn_one i:hover{
+        font-size: 2.5rem;
+      }
+
+      #check:checked ~ .sidebar_menu{
+        left:0px;
+      }
+      #check:checked ~ .btn_one i{
+        opacity: 0;
+      } 
+      #check:checked ~ .sidebar_menu .btn_two i{
+        opacity: 1;
+      } 
+
+
+    </style>
+  </head>
+  <body>
+    <div class="main_box">
+      <input type="checkbox" id="check" />
+      <div class="btn_one">
+        <label for="check" >
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+
+      <div class="sidebar_menu">
+        <div class="logo">
+          <a href="#">Apna College</a>
+        </div>
+
+        <div class="btn_two">
+          <label for="check" >
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <i class="fa-solid fa-image"></i>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <a href="#">Shortcuts</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-photo-film"></i>
+              <a href="#">Exhibits</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-calendar-days"></i>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-store"></i>
+              <a href="#">Store</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-comments"></i>
+              <a href="#">Feedback</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social_media">
+          <ul>
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

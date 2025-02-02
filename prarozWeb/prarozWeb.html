@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Segoe UI';
+        }
+        
+         .header-main{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 70px;
+            
+        } 
+        .logo{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .anchor a{
+            margin-left: 50px;
+            font-size: 0.80rem;
+            transition: all 2s ease-in-out ;
+        }
+        
+        .flex{
+            display: flex;
+            align-items: center;
+        }
+        .search{
+            height: 20px;
+            width: 55px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+        }
+        .main{
+            display: inline-block;
+            color: white;
+            padding-top: 80px;
+            padding-left: 150px;
+        }
+        .web{
+            font-size: 2rem;
+        }
+        .dev{
+            font-size: 2.5rem;
+            color: black;
+        }
+        .course{
+            font-size: 1.5rem;
+        }
+        .text{
+            margin-top: 5px;
+            color: whitesmoke;
+        }
+
+        .join:hover{
+            background-color: black;
+            
+        }
+        .anchor a:hover{
+            border-bottom: 2px solid black;
+        }
+        .join{
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 100px;
+            border: 2px solid black;
+            transition: all 2s ease-in-out ;
+        }
+        .login{
+            display: inline-block;
+            height: auto;
+            width: auto;
+            position: absolute;
+            right: 180px;
+            margin-top: 70px;
+            background-color: darkgray;
+            background-size: cover;
+            color: white;
+        }
+        .same{
+            margin-left:20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .log{
+            font-size: 1.4rem;
+            text-align: center;
+            width: 86.8%;
+            color: yellow;
+            font-weight: 700;
+            
+        }
+        .sametwo{
+            height: 30px;
+            margin-top: 10px;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid yellow;
+        }
+        
+        .log-two{
+            font-size: larger;
+            text-align: center;
+            color: yellow;
+            width: 86.8%;
+            background-color: transparent;
+        }
+        #unique{
+            color:yellow;
+            display: inline;
+        }
+        .para p{
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+<body style="background-image: url('1080p.jpg');background-size: cover;">
+    <header>
+        <div class="header-main">
+            
+            <div class="logo">
+                PraRoz
+            </div>
+            
+            <div class="anchor">
+                <a>HOME</a>
+                <a>ABOUT</a>
+                <a>SERVICE</a>
+                <a>DESIGN</a>
+                <a>CONTACT</a>
+            </div>
+            <div class="flex">
+            <div>
+                <input type="text" placeholder="Type to Search" style="background-color: transparent; border: none;">
+            </div>
+            <div class="search">
+                Search
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="display: inline-block;"></mAIn>
+        <div class="main">
+            <div class="web"><h2>Web Design &</h2></div>
+            <div class="dev"><h1>Development</h1></div>
+            <div class="course"><h3>Course</h3><h3></div>
+            <div class="text">
+                <pre>
+Web Design is a specialiaztion of the desgin stream.They also use HTML,
+CSS,WYS|WYG editing software, mark up validators etc. 
+to create design elements.
+                </pre>
+            </div>
+            <div class="join">
+                Join Us
+            </div>
+    </div>
+    </main>
+
+    
+        <div class="login">
+            
+            <div class="log same">Login Here</div>
+            
+            <div class="inputs same">
+                <input style="background-color: transparent" class="in1 sametwo" type="email" placeholder="Enter Your Email Here"><br>
+                <input style="background-color: transparent;" class="in2 sametwo" type="password" placeholder="Enter Your password Here">
+            </div>
+            
+            <div class="log-two same">Login</div>
+
+            <div class="para same">
+                <p >Don't have an account?</p>
+                <p id="unique">Sign Up</p> Here
+            </div>
+            
+        </div>
+   
+</body>
+</html>

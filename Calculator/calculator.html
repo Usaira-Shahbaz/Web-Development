@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI';
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(45deg,black,white);
+        }
+        .calculator{
+            border : 1px solid rgba(54, 45, 45, 0.349);
+            padding: 20px;
+            border-radius: 15px;
+            background: transparent;
+            box-shadow: 3px 10px 5px 9px rgb(53, 54, 52);
+            
+        }
+        input{
+            width: 320px;
+            height: auto;
+            cursor: pointer;
+            padding:24px;
+            margin: 10px;
+            border:none;
+            text-align: right;
+            background: transparent;
+            font-size: 40px;
+            color: white;
+            
+        }
+        input::placeholder{
+            color: white;
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            font-size: 20px;
+            color: white;
+            border-radius: 50%;
+            box-shadow: 0px 3px 3px 3px rgb(53, 54, 52);
+            transition: all  ease-in-out ; 
+            
+        }
+        button:hover{
+            
+            border : 2px solid aqua;
+        }
+        button:active{
+            font-size: 25px;
+        }
+        .equal{
+            background-color: orangered;
+        }
+        .operator{
+            color: aqua;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="box">
+        <div>
+            <Button class="operator">AC</Button>
+            <Button class="operator">DEL</Button>
+            <Button class="operator">%</Button>
+            <Button class="operator">/</Button>
+        </div>
+        <div>
+            <Button>7</Button>
+            <Button>8</Button>
+            <Button>9</Button>
+            <Button class="operator">*</Button>
+        </div>
+        <div>
+            <Button>4</Button>
+            <Button>5</Button>
+            <Button>6</Button>
+            <Button class="operator">-</Button>
+        </div>
+        <div>
+            <Button>1</Button>
+            <Button>2</Button>
+            <Button>3</Button>
+            <Button class="operator">+</Button>
+        </div>
+        <div>
+            <Button>00</Button>
+            <Button>0</Button>
+            <Button>.</Button>
+            <Button class="equal">=</Button>
+        </div>
+    </div>
+
+    <script>
+    let input = document.getElementById('box');
+    let buttons = document.querySelectorAll('button');
+    let string = "";
+    let arr = Array.from(buttons);
+    arr.forEach(button => {
+    button.addEventListener('click', (e) =>{
+        if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
+
+        else if(e.target.innerHTML == 'AC'){
+            string = "";
+            input.value = string;
+        }
+        else if(e.target.innerHTML == 'DEL'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
+        
+    })
+})
+    </script>
+</body>
+</html>

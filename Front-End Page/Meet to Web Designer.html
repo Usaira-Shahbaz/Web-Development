@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-One</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+        .side-bar{
+            background:black;
+            
+            height: 100vh;
+            width: 15vw;  
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .items li{
+            list-style-type: none;
+            margin: 20px;
+            color: white;
+            
+        }
+        .item-logo h1{
+            color: red;
+            position: absolute;
+            top: 15vh;
+        }
+        .main{
+            position:absolute;
+            top:25vh;
+            left: 95vh;
+        }
+        .head p{
+            color: rgb(8, 8, 8);
+            font-size: larger;
+        } 
+        .head span{
+            margin-right: 15px;
+            color: red;
+            font-size: 2.5rem;
+        }
+        .same{
+            position: relative;
+            left: 10vh;
+            top:10vh;
+        }
+        .image{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url('face2.jpg');
+            background-size: cover;
+            border: 1px solid red;
+        }
+        .name{
+            color: red;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .buttons{
+            margin-top: 30px;
+        }
+        .same2{
+            color: red;
+            position: relative;
+            right: 60px;
+            border: 2px solid red;
+            height: 40px;
+            width: 100px;
+            transition: all 2s ease-in-out ;
+        }
+        .same2:hover{
+            color: black;
+        }    
+    </style>
+</head>
+<body >
+    <header>
+        <div class="side-bar">
+            <div class="items">
+                
+                <div class="item-logo">
+                    <h1>NATURE</h1>
+                </div>
+                <div class="item-li">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li style="color: red;">Contact Us</li>
+                    <li>Blog</li>
+                    <li>Help</li>
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+
+
+        <div class="head">
+            <p><span>Meet</span> To Web Designer</p>
+        </div>
+        <div class="image same"></div>
+        <div class="name same"><h2>Ragnar</h2></div>
+        <div class="buttons same">
+            <button class="same2" style=" background-color: transparent;">Subscribe</button>
+            <button class="same2" style="background-color: transparent; margin-left: 25px;">Read More</button>
+        </div>
+
+    </div>
+
+    
+    </main>
+</body>
+</html>

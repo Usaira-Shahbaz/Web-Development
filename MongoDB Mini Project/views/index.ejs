@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>All Users</h1>
+
+    <%for(chat of data){%>
+    <div class="div1">
+        <div class="div2">
+            <p>From : <%=chat.from%></p>
+            <p id= "msg">Message : <%=chat.msg%></p>
+            <p>to : <%=chat.to%></p>
+            <hr>
+            <p><%= chat.created_at.toString().split(" ")[4] %></p>
+            <form method="GET" action="/users/<%= chat._id %>/edit">
+                <button>Want to Update User Message</button>
+            </form>
+
+            <br>
+
+            <form method="POST" action="/users/<%= chat._id %>?_method=DELETE">
+                <button>Want to Delete this Chat</button>
+            </form>
+            
+        </div>
+    </div>
+    
+    <%}%>
+
+    <h1>Wants to create new user</h1>
+    <form method="GET" action="/new/user"> 
+        <span>Click here</span>
+        <button>Create new User</button>
+    </form>
+</body>
+</html>

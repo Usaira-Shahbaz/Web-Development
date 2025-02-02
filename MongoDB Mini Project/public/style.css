@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+.div1 {
+    display: inline-block;
+
+   vertical-align: top;
+    margin: 5px;
+    
+}
+
+.div2 {
+    border-radius: 16px;
+    height: 290px;
+    width: 300px;
+    background-color: aqua;
+    padding: 10px;
+}
+
+#msg {
+    background-color: rgb(90, 173, 173);
+}
