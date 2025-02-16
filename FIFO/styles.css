@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(3, 3, 31);
+    color: rgb(178, 241, 220);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: rgba(0, 0, 50, 0.9);
+    padding: 0 20px;
+}
+
+.head {
+    color: white;
+    font-size: 2em;
+    animation: glow 1.5s infinite alternate;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.container-fluid {
+    margin-top: 20px;
+}
+
+.left-pane, .mid-pane, .right-pane {
+    border: 1px solid rgba(178, 241, 220, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(3, 3, 31, 0.9);
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+.left-pane {
+    text-align: center;
+}
+
+.mid-pane {
+    text-align: center;
+}
+
+.right-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chart-container {
+    margin-top: auto;
+    text-align: center;
+}
+
+#btn {
+    background-color: rgb(179, 0, 0);
+    color: rgb(253, 253, 253);
+    width: 175px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+#btn:hover{
+    background-color: rgb(99, 4, 4);
+    cursor: pointer;
+}
+
+.p-2 {
+    background-color: rgba(3, 3, 31, 0.856);
+    color: rgb(178, 241, 220);
+    border: 1px solid rgb(178, 241, 220);
+    border-radius: 6px;
+}
+
+::placeholder {
+    color: rgb(178, 241, 220);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(1, 1, 46), 0 0 15px rgb(8, 23, 29), 0 0 20px rgb(13, 20, 22), 0 0 25px rgb(0, 0, 51);
+        color: white;
+    }
+    70% {
+        text-shadow: 0 0 10px rgb(207, 42, 1), 0 0 20px rgb(5, 5, 65), 0 0 30px rgb(23, 0, 105), 0 0 40px rgb(31, 0, 66), 0 0 50px rgb(6, 6, 68);
+        color: lightblue;
+    }
+}
+
+#hitMissChart {
+    max-width: 100%;
+    margin: 20px auto;
+}
+/*  /////////////// for design a button blink */
+
+@keyframes blinkRed {
+    0%, 100% {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        background-color: rgba(255, 0, 0, 1);
+    }
+}
+
+@keyframes blinkGreen {
+    0%, 100% {
+        background-color: rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        background-color: rgba(0, 255, 0, 1);
+    }
+}
+
+.blink-red {
+    animation: blinkRed 1s ease-in-out;
+}
+
+.blink-green {
+    animation: blinkGreen 1s ease-in-out;
+}

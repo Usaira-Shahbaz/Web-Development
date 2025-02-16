@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement Algorithm</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="head">
+            <h3>Operating System Lab</h3>
+        </div>
+        <div class="logo">
+            <img src="https://namal.edu.pk/uploads/logo22869383.png" alt="Logo" width="40px" height="40px">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Side: Input Form -->
+            <div class="col-md-3 left-pane">
+                <h3>Input Section</h3>
+                <form action="" class="form">
+                    <input type="number" min="3" placeholder="Frame Size" id="frame" class="p-2 mb-1" required>
+                    <input type="text" placeholder="Enter Elements (by space)" id="arr" class="p-2 mb-1" required><br><br>
+                    <input type="submit" value="Submit" id="btn" class="btn btn-dark p-2">
+                    <input type="reset" value="Reset" id="btn" class="btn btn-dark p-2" onclick="resetWin()">
+                    <br><br>
+                    <h3>Hit: <span style="color: green;"> Green</span>   </h3><h3>Miss:<span style="color: Red;"> _Red</span></h3>
+                </form>
+            </div>
+
+            <!-- Middle Section: Table -->
+            <div class="col-md-6 mid-pane">
+                <h3>Page Replacement Algorithm</h3>
+                <div>
+                    <h2>Table FIFO</h2>
+                    
+                    <table id="grid1" width="100%" border="2" cellpadding="20" cellspacing="7px"></table>
+                    <table id="grid" width="100%" border="2" cellpadding="20" cellspacing="7px">
+                    </table>
+                </div>
+            </div>
+
+            <!-- Right Side: Statistics and Chart -->
+            <div class="col-md-3 right-pane">
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <h5 id="hits"></h5>
+                    <h5 id="miss"></h5>
+                    <h5 id="ratioh"></h5>
+                    <h5 id="ratiom"></h5>
+                </div>
+                <div class="chart-container">
+                    <h3>Chart</h3>
+                    <canvas id="hitMissChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+    <script>
+        function resetWin() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>
